@@ -1,0 +1,40 @@
+<style>
+        body { 
+            font-family: sans-serif; 
+            text-align: center; 
+            padding: 20px; 
+            background-color: black; 
+            color: white; 
+        }
+        
+        #karta-container { 
+            margin: 20px auto; 
+            border: 4px dotted yellow; 
+            display: inline-block; 
+            background-color: #eee; 
+            padding: 10px; 
+            /* Zajištění viditelnosti kontejneru před vytažením první karty */
+            min-width: 400px; 
+            min-height: 300px; 
+        }
+        
+        #vybrana-karta { 
+            max-width: 100%; 
+            max-height: 100%; 
+            height: auto; 
+            display: block; 
+            object-fit: contain; 
+        }
+        
+        button { 
+            padding: 10px 20px; 
+            font-size: 1.2em; 
+            cursor: pointer; 
+            margin: 5px; 
+        }
+        .info { 
+            margin-top: 10px; 
+            font-size: 0.9em; 
+            color: lightgray; 
+        }
+    </style>
