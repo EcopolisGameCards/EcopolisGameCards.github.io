@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Digitální Balíček Karet</title>
+    <style>
+        /* CSS pro lepší vzhled */
+        body { font-family: sans-serif; text-align: center; padding: 20px; }
+        #karta-container { 
+            margin: 20px auto; 
+            border: 2px solid #333; 
+            width: 400px; 
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #eee;
+        }
+        #vybrana-karta { 
+            max-width: 100%; 
+            max-height: 100%; 
+            display: none; 
+        }
+        button { padding: 10px 20px; font-size: 1.2em; cursor: pointer; }
+        .info { margin-top: 10px; font-size: 0.9em; color: #555; }
+    </style>
+</head>
+<body>
+
+    <h1>Tahání karet</h1>
+
+    <div id="karta-container">
+        <img id="vybrana-karta" src="" alt="Vytáhnutá karta">
+        <div id="placeholder">Klikněte na tlačítko "Vytáhnout kartu"</div>
+    </div>
+
+    <button onclick="tahnoutKarty()">Vytáhnout kartu</button>
+    <button onclick="zamichatBalicek()">Zamíchat balíček (Reset)</button>
+
+    <div class="info">
+        Karet zbývá v balíčku: <span id="zbyvajici-pocet">192</span> 
+    </div>
+
+    <script src="app.js"></script> 
+</body>
+</html>
